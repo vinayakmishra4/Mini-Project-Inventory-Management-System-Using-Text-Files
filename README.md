@@ -43,7 +43,7 @@ The **Inventory Management System** helps manage and track stock for a store, wa
 
 | Resource Type         | Link                                                                                                                                     |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| 📝 Notes              | [Notes](https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files/blob/main/Inventory-Mangement-System-with-Files/Inventory.txt) |
+| 📝 Notes              | [Notes](https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files/blob/main/Inventory-Mangement-System-with-Files/nventory%20Management%20with%20Files%20-%20Overview.md) |
 | 🧑‍💻 Project Overview | [Project Code & Overview Notebook](https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files/blob/main/Inventory-Mangement-System-with-Files/Inventory%20Management%20with%20Files%20-%20Overview.ipynb) |
 
 ---
