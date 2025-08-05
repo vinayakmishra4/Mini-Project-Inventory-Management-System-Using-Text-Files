@@ -1,3 +1,5 @@
-Product ID     Product Name        Price     Quantity  
--------------------------------------------------------
-1              PC                  10        20        
+101,Apple,1.50,100
+102,Banana,0.75,150
+103,Orange,1.00,80
+104,Cherry,3,30
+105,Grappes ,2.0,80
