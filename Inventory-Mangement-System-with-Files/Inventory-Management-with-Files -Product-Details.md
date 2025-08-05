@@ -1,4 +1,4 @@
-## 📄 Inventory Management System (File-Based) – **Project Description**
+## 📄 Inventory Management System (File-Based) with Product Details
 
 ### 🎯 Project Overview
 
