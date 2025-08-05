@@ -1,3 +1,81 @@
+# 📦 Inventory Management System Using Text Files
+
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+![Status](https://img.shields.io/badge/status-complete-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+---
+
+## 📖 Overview
+
+This is a beginner-friendly **Inventory Management System** built with Python using simple text files for data storage. It's perfect for those new to programming or anyone looking to understand basic file handling without using databases.
+
+---
+
+## 🧩 Key Features
+
+- Add, view, and count inventory items
+- Track essential details: Product ID, Name, Price, Quantity
+- File creation and data persistence using plain text files
+- Beginner-friendly with readable code and markdown instructions
+
+---
+
+## 🗂️ Project Structure
+
+```
+📁 Inventory-Management-System
+├── 📄 README.md
+├── 📓 Inventory Management with Files - Overview.ipynb
+└── 📄 inventory.txt
+```
+
+---
+
+## ⚙️ Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Inventory-Management-System.git
+   cd Inventory-Management-System
+   ```
+
+2. Run the Jupyter Notebook:
+   ```bash
+   jupyter notebook "Inventory Management with Files - Overview.ipynb"
+   ```
+
+3. Follow the instructions in the notebook to interact with the inventory system.
+
+---
+
+## ✅ Requirements
+
+- Python 3.7+
+- Jupyter Notebook
+
+Install Jupyter via pip:
+```bash
+pip install notebook
+```
+
+---
+
+## 📌 Future Improvements
+
+- Switch to CSV or JSON for better structure
+- Add a search/update/delete feature
+- Implement a GUI using Tkinter or PyQt
+- Upgrade to use SQLite or MongoDB
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+---
+
 # 📦✨ Inventory Management System Using Text Files in Python
 
 Welcome to this simple **Inventory Management System** project! This guide will walk you through building a basic inventory tracker using plain text files and Python — no complex databases required.
