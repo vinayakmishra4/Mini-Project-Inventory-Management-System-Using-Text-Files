@@ -3,3 +3,5 @@
 103,Orange,1.00,80
 104,Cherry,3,30
 105,Grappes ,2.0,80
+106,Mangoes,4.5,40
+107,pineapple,6.0,100
