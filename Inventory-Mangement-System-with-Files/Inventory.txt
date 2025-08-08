@@ -6,3 +6,4 @@
 106,Mangoes,4.5,40
 107,pineapple,6.0,100
 108,black grappes,7.0,100
+101,Apple,24,100
