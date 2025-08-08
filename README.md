@@ -2,53 +2,37 @@
 
 ---
 
-## 📌 Overview
+## 🚀 Overview
 
-The **Inventory Management System With Files** is a Python-based application designed to manage small to medium-sized product inventories using simple text files for storage.  
-This project is implemented in **Jupyter Notebook** and demonstrates **file handling, structured data management, and basic business logic** in Python.
-
-The system can:
-- Store product information (ID, Name, Price, Quantity).
-- Track available stock levels.
-- Process retail and wholesale purchases.
-- Log all wholesale transactions with customer details.
-- Update and refill inventory in real-time.
-
-This project is ideal for beginners learning **Python file I/O** and **inventory-based problem solving**.
+Welcome to the **Inventory Management System With Files** — a simple yet powerful Python application designed to help you manage small to medium-sized inventories using plain text files!  
+Perfect for beginners, this project teaches you essential **file handling**, **structured data management**, and **basic business logic** concepts in Python, all within a clean, easy-to-understand Jupyter Notebook environment.
 
 ---
 
-## 🚀 Features
+## 🔍 What Can It Do?
 
-1. **Add Products**  
-   - Add new products by entering Product ID, Name, Price, and Quantity.  
-   - Stores data in `Inventory-of-gadgets.txt` in CSV format.
+- **Add new products** with unique ID, name, price, and stock quantity.  
+- **View the entire inventory** in a neat, tabulated format.  
+- **Search products** instantly by Product ID.  
+- **Handle retail purchases** smoothly with live stock updates.  
+- **Manage wholesale sales** by recording customer details and bulk orders.  
+- **Automatically update stock levels** and maintain accurate inventory.  
+- **Keep detailed sales logs** with timestamps for transparency and tracking.
 
-2. **View Inventory**  
-   - Displays all available products in a table format.  
-   - Shows Product ID, Name, Price, and Quantity.
+---
 
-3. **Search Product**  
-   - Search by **Product ID** and display details instantly.
+## ✨ Key Features
 
-4. **Buy Product (Retail)**  
-   - Purchase items by specifying name and quantity.  
-   - Generates a bill based on product price and quantity.  
-   - Handles insufficient stock by offering available quantity.
-
-5. **Update Inventory**  
-   - Automatically updates the product quantity after a sale.
-
-6. **Refill Stock**  
-   - Add more units to an existing product’s quantity.
-
-7. **Wholesale Sales**  
-   - Accepts **customer details** (Name, Phone, Email).  
-   - Processes bulk purchases and updates inventory.  
-   - Saves a record of every wholesale sale in `sales.txt` with a timestamp.
-
-8. **Sales Logging**  
-   - Logs wholesale transactions with customer details for record keeping.
+| Feature                | Description                                                        |
+|------------------------|--------------------------------------------------------------------|
+| **Add Products**       | Add new items quickly with ID, name, price, and quantity          |
+| **View Inventory**     | See all products in a clean table format                           |
+| **Search Product**     | Find any product by its unique ID                                  |
+| **Buy Product (Retail)** | Purchase by name and quantity with live stock check               |
+| **Update Inventory**   | Inventory updates instantly after every sale                       |
+| **Refill Stock**       | Easily restock existing products                                   |
+| **Wholesale Sales**    | Process bulk orders with customer info and save transaction logs  |
+| **Sales Logging**      | Detailed logs for all wholesale transactions with timestamps      |
 
 ---
 
@@ -56,70 +40,73 @@ This project is ideal for beginners learning **Python file I/O** and **inventory
 
 - Python 3  
 - Jupyter Notebook  
-- File I/O (text files)  
-- CSV Format for structured data
+- File I/O (Text Files & CSV Format)  
+- Timestamp Logging  
 
 ---
 
-## 📂 File Structure
+## 🗂️ Project Structure
 
-Inventory-Management-System.ipynb   # Main Jupyter Notebook containing code
-Inventory-of-gadgets.txt            # Product inventory file (CSV format)
-sales.txt                           # Wholesale sales log file
-README.md                           # Project documentation
-
----
-
-## ⚙️ How It Works
-
-- On first run, the system checks if `Inventory-of-gadgets.txt` exists; if not, it creates it.
-- Products are stored as comma-separated lines in the format:  
-  `ProductID,ProductName,Price,Quantity`
-- Inventory can be viewed, searched, and updated with purchases.
-- Wholesale sales capture customer info and log transactions with timestamps.
+| File Name                     | Purpose                                              |
+|-------------------------------|-----------------------------------------------------|
+| `Inventory-Management-System.ipynb` | Main Jupyter Notebook with all the code            |
+| `Inventory-of-gadgets.txt`     | Stores product inventory in CSV format               |
+| `sales.txt`                   | Logs wholesale sales and customer transactions       |
+| `README.md`                   | Project documentation                                 |
 
 ---
 
-## 📖 Usage Instructions
+## 🎯 How It Works
+
+- Checks if `Inventory-of-gadgets.txt` exists on startup; creates it if missing.  
+- Stores products as comma-separated values:  
+  `ProductID,ProductName,Price,Quantity`  
+- Enables quick viewing, searching, buying, and restocking of products.  
+- Captures customer details for wholesale sales and records transactions with timestamps.
+
+---
+
+## 📖 Getting Started
 
 1. Open the project in **Jupyter Notebook**.  
-2. Run the "Make inventory file" cell to initialize the data file.  
-3. Use the functions provided to:  
-   - Add new products  
-   - View current inventory  
-   - Search products by ID  
-   - Buy products (retail or wholesale)  
-   - Refill stock  
-4. Review `sales.txt` for wholesale transaction records.
+2. Run the initialization cell to create the inventory file if it doesn't exist.  
+3. Use the available functions to:  
+   - Add and manage products  
+   - Search and view inventory  
+   - Process retail and wholesale purchases  
+   - Refill stock as needed  
+4. Check `sales.txt` for detailed wholesale transaction logs.
 
 ---
 
-## ⚠️ Limitations
+## ⚠️ Known Limitations
 
-- Uses plain text files — not suitable for large-scale or multi-user systems.  
-- Minimal input validation; improper input can cause errors.  
-- Command-line/Jupyter only; no graphical interface.  
-- Duplicate Product IDs are possible (no uniqueness enforced).
-
----
-
-## 📌 Future Improvements
-
-- Implement a **main menu** for easier navigation.  
-- Use Python’s `csv` module for safer file operations.  
-- Add robust **error handling** and input validation.  
-- Replace text files with an **SQLite database** backend.  
-- Develop a **GUI** using Tkinter or PyQt.  
-- Enforce **unique Product IDs** to prevent duplicates.
+- Uses plain text files — not optimized for large or multi-user environments.  
+- Minimal input validation — incorrect inputs may cause errors.  
+- Command-line/Jupyter interface only — no GUI yet.  
+- No enforcement of unique Product IDs (duplicates possible).
 
 ---
 
-## 🔗 Source Code
+## 🚀 Future Enhancements
 
-View the complete Jupyter Notebook on GitHub:  
+- Build a **main menu** for easier navigation.  
+- Switch to Python’s built-in `csv` module for safer file handling.  
+- Add robust **input validation and error handling**.  
+- Migrate from text files to an **SQLite database** backend.  
+- Create a **GUI interface** using Tkinter or PyQt.  
+- Enforce **unique Product IDs** to avoid duplicates.
+
+---
+
+## 🔗 Explore the Code
+
+View the full project and source code on GitHub:  
 [Inventory-Management-System.ipynb](https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files/blob/main/Inventory-Management-System.ipynb)
 
 ---
 
 👨‍💻 *Author:* Vinayak  
 📅 *Created:* 2025
+
+---
