@@ -162,7 +162,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 **Vinayak Mishra**
 - GitHub: [@vinayakmishra4](https://github.com/vinayakmishra4)
-- Project Repo: [Mini-Project-Inventory-Management-System-Using-Text-Files](https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files)
+- Code : [Mini-Project-Inventory-Management-System-Using-Text-Files](https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-TextFiles/blob/main/Inventory-Management-System.ipynb)
 - Feel free to open an issue on the repo for questions, bugs, or suggestions.
 
 ---
