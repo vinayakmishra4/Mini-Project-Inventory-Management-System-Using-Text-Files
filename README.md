@@ -3,137 +3,213 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" alt="Python">
   <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter" alt="Jupyter">
-  <img src="https://img.shields.io/badge/Storage-Text%20Files-success?style=for-the-badge" alt="Storage">
+  <img src="https://img.shields.io/badge/Database-Text%20Files-success?style=for-the-badge" alt="Database">
+  <img src="https://img.shields.io/badge/Platform-Console%20Application-lightgrey?style=for-the-badge" alt="Platform">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
 </p>
 
+<h3 align="center">
+A Beginner-Friendly Inventory & Billing Management System built using Python and Plain Text Files 📦
+</h3>
+
 <p align="center">
-  <strong>A beginner-friendly Inventory Management & Billing System built using Python and plain text files.</strong><br>
-  Learn Python File Handling, CRUD Operations, Inventory Management, and Billing without using SQL or external libraries.
+Manage products, generate bills, update inventory, and store customer purchase records without using SQL or any external database.
 </p>
 
 ---
 
-## 🔗 Quick Links
+## 🌟 Quick Links
 
-- 🌐 **Repository:**  
-  https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files
+<p align="center">
 
-- 📓 **Jupyter Notebook:**  
-  https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files/blob/main/Inventory-Management-System.ipynb
+<a href="https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files">
+<img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github">
+</a>
+
+<a href="https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files/blob/main/Inventory-Management-System.ipynb">
+<img src="https://img.shields.io/badge/Open-Jupyter%20Notebook-F37626?style=for-the-badge&logo=jupyter">
+</a>
+
+</p>
 
 ---
 
-## 📖 Table of Contents
+# 📖 Table of Contents
 
 - [Overview](#-overview)
-- [Features](#-features)
+- [Key Features](#-key-features)
+- [Workflow](#-workflow)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Workflow](#-workflow)
-- [Example](#-example)
-- [Data Files](#-data-files)
-- [Learning Outcomes](#-learning-outcomes)
-- [Future Improvements](#-future-improvements)
-- [Screenshots](#-screenshots)
-- [Author](#-author)
-- [License](#-license)
+- [Notebook Sections](#-notebook-sections)
 
 ---
 
 # 📖 Overview
 
-The **Inventory Management System** is a beginner-friendly console-based Python project that uses **plain text (`.txt`) files** as its database instead of SQL.
+The **Inventory Management System** is a beginner-friendly **console-based Python application** that simulates a real-world inventory and billing system for a small retail shop.
 
-This project demonstrates how to build a complete inventory and billing application using only Python's standard library. It provides hands-on experience with file handling, CRUD operations, data parsing, inventory tracking, and customer billing.
+Unlike traditional inventory systems that rely on SQL databases, this project stores all information in plain **`.txt` files**, helping beginners understand how persistent data storage works using Python's built-in file handling capabilities.
 
-The complete implementation is available in a **Jupyter Notebook**, where each feature is organized into separate sections for easy understanding.
+The project demonstrates practical implementation of:
+
+- 📂 File Handling
+- ✍ CRUD Operations
+- 📊 CSV-style Data Parsing
+- 📦 Inventory Management
+- 🧾 Customer Billing
+- 💾 Persistent Data Storage
+
+Every feature is implemented step-by-step inside a **Jupyter Notebook**, making it easy to understand and modify.
 
 ---
 
-# ✨ Features
+# ✨ Key Features
 
-### 📦 Inventory Management
+## 📦 Inventory Management
 
-- ➕ Add New Products
-- 📋 View Inventory
-- 🔍 Search Products by Product ID
-- 🔄 Refill Existing Stock
-- 📉 Automatically Update Inventory After Purchase
+| Feature | Description |
+|---------|-------------|
+| ➕ Add Product | Add new products with Product ID, Name, Price, and Quantity |
+| 📋 Read Inventory | Display all available products in a tabular format |
+| 🔍 Search Product | Search products by Product ID |
+| 🔄 Refill Stock | Increase stock quantity of existing products |
+| 📉 Auto Inventory Update | Deduct quantity after every purchase |
 
-### 💰 Billing System
+---
 
-- 🛒 Buy Products
-- 🧾 Generate Customer Bills
-- 💵 Automatic Total Calculation
-- 📝 Save Sales Records
+## 💰 Billing System
 
-### 👤 Customer Information
+| Feature | Description |
+|---------|-------------|
+| 🛒 Purchase Product | Buy products from available inventory |
+| 🧾 Generate Bill | Print customer bill automatically |
+| 💵 Total Calculation | Calculate purchase amount |
+| 📝 Sales History | Save every sale into `sales.txt` |
 
-Each purchase stores:
+---
 
-- Customer Name
-- Phone Number
-- Email Address
-- Purchase Date & Time
+## 👤 Customer Information
 
-All customer purchase records are automatically saved to **sales.txt**.
+Each completed purchase stores:
+
+- 👤 Customer Name
+- 📞 Phone Number
+- 📧 Email Address
+- 🕒 Purchase Date & Time
+- 💵 Total Amount
+- 📦 Product Purchased
+- 🔢 Quantity Purchased
+
+---
+
+# ⚡ Workflow
+
+```text
+                Start
+                  │
+                  ▼
+      Create Inventory File
+                  │
+                  ▼
+         Add New Product
+                  │
+                  ▼
+        Read Inventory File
+                  │
+                  ▼
+        Search Product by ID
+                  │
+                  ▼
+         Purchase Product
+                  │
+                  ▼
+         Generate Customer Bill
+                  │
+                  ▼
+        Update Inventory Stock
+                  │
+                  ▼
+       Store Customer Details
+                  │
+                  ▼
+        Save Sale to sales.txt
+                  │
+                  ▼
+                 End
+```
 
 ---
 
 # 🛠 Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
+| Technology | Description |
+|------------|-------------|
 | 🐍 Python 3 | Programming Language |
 | 📓 Jupyter Notebook | Development Environment |
 | 📂 Text Files | Database |
-| 📚 os | File Handling |
+| 📚 os | File Operations |
 | ⏰ datetime | Billing Timestamp |
 
 > **No external libraries required.**
 
 ---
 
-# 📁 Project Structure
+# 📂 Project Structure
 
 ```text
 Mini-Project-Inventory-Management-System-Using-Text-Files/
 │
-├── Inventory-Management-System.ipynb
-├── Inventory-of-gadgets.txt
-├── sales.txt
-├── LICENSE
-└── README.md
+├── 📓 Inventory-Management-System.ipynb
+├── 📄 Inventory-of-gadgets.txt
+├── 📄 sales.txt
+├── 📜 LICENSE
+└── 📘 README.md
 ```
+
+### 📄 File Description
+
+| File | Purpose |
+|------|---------|
+| Inventory-Management-System.ipynb | Main notebook containing all features |
+| Inventory-of-gadgets.txt | Stores product inventory |
+| sales.txt | Stores customer sales records |
+| README.md | Project documentation |
+| LICENSE | MIT License |
 
 ---
 
 # ⚙️ Installation
 
-Clone the repository
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/vinayakmishra4/Mini-Project-Inventory-Management-System-Using-Text-Files.git
 ```
 
-Move into the project directory
+---
+
+## 2️⃣ Move into the Project Directory
 
 ```bash
 cd Mini-Project-Inventory-Management-System-Using-Text-Files
 ```
 
-Launch Jupyter Notebook
+---
+
+## 3️⃣ Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-Open
+---
 
-```text
+## 4️⃣ Open the Notebook
+
+```
 Inventory-Management-System.ipynb
 ```
 
@@ -143,191 +219,187 @@ Run all notebook cells sequentially from **top to bottom**.
 
 # 🚀 Usage
 
-The notebook is organized into the following sections:
+After opening the notebook, execute each section in order.
+
+Every section implements one major feature of the Inventory Management System.
+
+The application automatically creates the required text files if they do not already exist.
+
+---
+
+# 📚 Notebook Sections
 
 | Step | Feature |
-|------|---------|
-| 1 | Create Inventory File |
-| 2 | Add Product |
-| 3 | Read Inventory |
-| 4 | Search Product |
-| 5 | Buy Product & Generate Bill |
-| 6 | Update Inventory |
-| 7 | Refill Stock |
-| 8 | Complete Sales System |
+|------|----------|
+| 1️⃣ | Create Inventory File |
+| 2️⃣ | Add Product Details |
+| 3️⃣ | Read Inventory File |
+| 4️⃣ | Search Product |
+| 5️⃣ | Buy Product & Generate Bill |
+| 6️⃣ | Update Inventory |
+| 7️⃣ | Refill Stock |
+| 8️⃣ | Complete Sales System |
 
 ---
 
-# 🔄 Workflow
+# 🎯 What You'll Learn
 
-```text
-Create Inventory File
-        │
-        ▼
-Add Product
-        │
-        ▼
-Read Inventory
-        │
-        ▼
-Search Product
-        │
-        ▼
-Purchase Product
-        │
-        ▼
-Generate Bill
-        │
-        ▼
-Update Inventory
-        │
-        ▼
-Record Customer Details
-        │
-        ▼
-Save Sale to sales.txt
-```
+By building this project, you'll gain hands-on experience with:
+
+- ✅ Python File Handling
+- ✅ CRUD Operations
+- ✅ CSV/Text File Processing
+- ✅ Inventory Management Logic
+- ✅ Customer Billing System
+- ✅ Console Application Development
+- ✅ Data Persistence Without SQL
+- ✅ Problem Solving Using Python
 
 ---
 
-# 💻 Example
+# 💡 Why This Project?
 
-### ➕ Add Product
+✔ Beginner Friendly
 
-```text
-Enter Product ID: 3
+✔ No Database Required
 
-Enter Product Name: iPad Air
+✔ No External Libraries
 
-Enter Product Price: 55000
+✔ Easy to Understand
 
-Enter Product Quantity: 15
+✔ Great Python Practice Project
 
-Product Added Successfully ✔
-```
+✔ Ideal for College Mini Projects
 
-Stored in **Inventory-of-gadgets.txt**
-
-```text
-3,iPad Air,55000,15
-```
+✔ Resume & Portfolio Friendly
 
 ---
-
-### 📋 Read Inventory
-
-```text
----------------------------------------------------------
-Product ID   Product Name      Price       Quantity
----------------------------------------------------------
-1            iPhone 15         79999       20
-2            Samsung S24       68999       12
-3            iPad Air          55000       15
----------------------------------------------------------
-```
-
 ---
 
-### 🧾 Purchase Product
+# 🎥 Project Demo
 
-```text
-Customer Name : Rahul
+> 📽️ Add a short screen recording of your project here.
 
-Product ID : 2
-
-Quantity : 2
-
-Total Amount : ₹137998
-
-Purchase Successful ✔
-```
-
-The inventory is automatically updated, and the transaction is saved to **sales.txt**.
-
----
-
-# 📂 Data Files
-
-### Inventory File
-
-**Inventory-of-gadgets.txt**
-
-```text
-product_id,product_name,product_price,product_quantity
-```
-
-Example
-
-```text
-1,iPhone 15,79999,20
-2,Samsung S24,68999,12
-3,iPad Air,55000,15
-```
-
----
-
-### Sales File
-
-**sales.txt**
-
-```text
-timestamp,
-product_id,
-product_name,
-quantity_sold,
-total_amount,
-customer_name,
-customer_phone,
-customer_email
-```
-
----
-
-# 🎯 Learning Outcomes
-
-This project helps you learn:
-
-- Python File Handling
-- CRUD Operations
-- CSV/Text File Processing
-- Inventory Management Logic
-- Billing System Development
-- Customer Record Management
-- Console Application Development
-
----
-
-# 🚀 Future Improvements
-
-- ✅ Refactor notebook into a Python module
-- ✅ Menu-driven CLI application
-- ✅ Object-Oriented Programming (OOP)
-- ✅ SQLite database integration
-- ✅ Product Update & Delete functionality
-- ✅ Duplicate Product ID validation
-- ✅ Input validation
-- ✅ Low stock alerts
-- ✅ Sales analytics dashboard
-- ✅ Export bills as PDF
-- ✅ GUI using Tkinter or PyQt
+<p align="center">
+  <img src="demo.gif" alt="Project Demo" width="900">
+</p>
 
 ---
 
 # 📸 Screenshots
 
-You can add screenshots here to showcase your project.
+## 🏠 Home Screen
 
-```text
-📷 Home Menu
+<p align="center">
+<img src="images/home.png" width="900" alt="Home Screen">
+</p>
 
-📷 Add Product
+---
 
-📷 Inventory List
+## ➕ Add Product
 
-📷 Billing Screen
+<p align="center">
+<img src="images/add-product.png" width="900" alt="Add Product">
+</p>
 
-📷 Sales History
-```
+---
+
+## 📋 Inventory
+
+<p align="center">
+<img src="images/inventory.png" width="900" alt="Inventory">
+</p>
+
+---
+
+## 🔍 Search Product
+
+<p align="center">
+<img src="images/search-product.png" width="900" alt="Search Product">
+</p>
+
+---
+
+## 🧾 Billing
+
+<p align="center">
+<img src="images/billing.png" width="900" alt="Billing">
+</p>
+
+---
+
+## 📄 Sales Record
+
+<p align="center">
+<img src="images/sales-history.png" width="900" alt="Sales History">
+</p>
+
+---
+
+# 🏆 Project Highlights
+
+- 📦 Inventory Management System
+- 🧾 Customer Billing Module
+- 📂 File-Based Database
+- 📄 CSV-style Text File Storage
+- 🐍 Built using Pure Python
+- 📓 Jupyter Notebook Implementation
+- 🚫 No SQL Database Required
+- 🚫 No External Libraries
+- 🎯 Beginner Friendly
+- 💼 Resume & Portfolio Ready
+
+---
+
+# 📈 Skills Demonstrated
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-100%25-blue?style=for-the-badge&logo=python">
+
+<img src="https://img.shields.io/badge/File%20Handling-Advanced-success?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/CRUD-Operations-orange?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Problem%20Solving-red?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter">
+
+</p>
+
+---
+
+# 📊 Repository Statistics
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=vinayakmishra4&show_icons=true&theme=tokyonight">
+
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=vinayakmishra4&theme=tokyonight">
+
+</p>
+
+---
+
+# 🌐 Connect With Me
+
+<p align="center">
+
+<a href="https://github.com/vinayakmishra4">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github">
+</a>
+
+<!-- Replace with your LinkedIn URL -->
+<a href="https://www.linkedin.com/in/YOUR-LINKEDIN">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin">
+</a>
+
+<!-- Replace with your Email -->
+<a href="mailto:YOUR_EMAIL@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail">
+</a>
+
+</p>
 
 ---
 
@@ -336,6 +408,7 @@ You can add screenshots here to showcase your project.
 Contributions are welcome!
 
 1. Fork this repository.
+
 2. Create a new branch.
 
 ```bash
@@ -348,23 +421,43 @@ git checkout -b feature-name
 git commit -m "Add new feature"
 ```
 
-4. Push to GitHub.
+4. Push the changes.
 
 ```bash
 git push origin feature-name
 ```
 
-5. Open a Pull Request.
+5. Open a Pull Request 🚀
+
+---
+
+# ⭐ Show Your Support
+
+If you found this project helpful, please consider:
+
+⭐ Starring this repository
+
+🍴 Forking the repository
+
+🐞 Reporting bugs
+
+💡 Suggesting improvements
 
 ---
 
 # 👨‍💻 Author
 
-## Vinayak Mishra
+<div align="center">
 
-- **GitHub:** https://github.com/vinayakmishra4
+## **Vinayak Mishra**
 
-If you found this project helpful, consider giving it a ⭐ on GitHub!
+### Python Developer | Data Science Enthusiast
+
+<a href="https://github.com/vinayakmishra4">
+<img src="https://img.shields.io/badge/GitHub-vinayakmishra4-181717?style=for-the-badge&logo=github">
+</a>
+
+</div>
 
 ---
 
@@ -376,10 +469,12 @@ Feel free to use, modify, and distribute this project for educational purposes.
 
 ---
 
-<p align="center">
-⭐ If you like this project, don't forget to star the repository! ⭐
-</p>
+<div align="center">
 
-<p align="center">
+# ⭐ Thanks for Visiting!
+
+If you enjoyed this project, don't forget to **Star ⭐ the repository**.
+
 Made with ❤️ using Python
-</p>
+
+</div>
